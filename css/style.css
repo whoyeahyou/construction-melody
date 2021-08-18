@@ -1,3 +1,8 @@
+@font-face {
+     font-family: bebas-regular;
+     src: url(../font/BebasNeue_Regular.ttf);
+}
+
 * {
      box-sizing: border-box;
 }
@@ -55,4 +60,84 @@ body {
      font-weight: 700;
      font-size: 17px;
      line-height: 20px;
+}
+
+
+/* main */
+
+
+.main {
+     max-width: 1280px;
+     margin: auto;
+     padding-top: 54px;
+     display: flex;
+}
+
+.main__image {
+     max-height: 640px;
+}
+
+.main__image-svg path {
+     opacity: 0;
+     cursor: pointer;
+}
+
+.main__image-svg path:hover {
+     opacity: 1;
+}
+
+.main__info {
+     flex-grow: 1;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.main__info-counter_group {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.main__info-title {
+     margin: 0;
+     font-family: bebas-regular, sans-serif;
+     font-size: 37px;
+     line-height: 25px;
+     font-style: normal;
+     font-weight: normal;
+     text-transform: uppercase;
+     color: #635854;
+}
+
+.main__info-counter_group-arrow {
+     cursor: pointer;
+}
+
+.main__info-counter_group-btn {
+     background-color: #fff;
+     border: none;
+}
+
+.main_info-counter_group-btn--down {
+     transform: rotateX(180deg);
+}
+
+.main__info-counter {
+     font-family: bebas-regular, sans-serif;
+     color: #635854;
+     font-size: 124px;
+     font-style: normal;
+     font-weight: normal;
+}
+
+.main__info-counter_group-button--primary {
+     background-color: #3596F5;
+     border-radius: 6px;
+     border: none;
+     color: #fff;
+     padding: 16px 36px;
+     cursor: pointer;
 }
