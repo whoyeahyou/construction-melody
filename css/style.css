@@ -1,5 +1,5 @@
 @font-face {
-     font-family: bebas-regular;
+     font-family: bebas regular;
      src: url(../font/BebasNeue_Regular.ttf);
 }
 
@@ -99,11 +99,12 @@ body {
      display: flex;
      flex-direction: column;
      align-items: center;
+     width: 90%;
 }
 
 .main__info-title {
      margin: 0;
-     font-family: bebas-regular, sans-serif;
+     font-family: bebas regular, sans-serif;
      font-size: 37px;
      line-height: 25px;
      font-style: normal;
@@ -140,4 +141,10 @@ body {
      color: #fff;
      padding: 16px 36px;
      cursor: pointer;
+}
+
+/* js */
+
+path.current-floors {
+     opacity: 1;
 }
