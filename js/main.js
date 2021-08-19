@@ -4,7 +4,7 @@ $(document).ready(function () {
      var counterUp = $('.main_info-counter_group-btn--up');
      var counterDown = $('.main_info-counter_group-btn--down');
      floorPath.on('mouseover', function () {
-          floorPath.removeClass('current-floors');
+          floorPath.removeClass('current-floor');
           currentFloor = $(this).attr('data-floor');
           $('.main__info-counter').text(currentFloor);
      });
@@ -17,8 +17,8 @@ $(document).ready(function () {
                     useGroupping: false
                });
                $('.main__info-counter').text(usCurrentFloor);
-               floorPath.removeClass('current-floors');
-               $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floors');
+               floorPath.removeClass('current-floor');
+               $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
           }
      });
 
@@ -30,8 +30,8 @@ $(document).ready(function () {
                     useGroupping: false
                });
                $('.main__info-counter').text(usCurrentFloor);
-               floorPath.removeClass('current-floors');
-               $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floors');
+               floorPath.removeClass('current-floor');
+               $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
           }
      });
 });
