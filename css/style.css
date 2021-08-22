@@ -5,7 +5,7 @@
 
 * {
      box-sizing: border-box;
-     transition: all .3s linear;
+     transition: all .2s linear;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 .header {
      width: 100%;
      background-color: #635854;
-     padding: 12px 0;
+     padding: 20px 0;
      border-bottom: 5px solid #3596F5;
 }
 
@@ -82,8 +82,8 @@ body {
 
 .main {
      max-width: 1280px;
-     margin: auto;
-     padding-top: 54px;
+     margin: 0 auto;
+     padding: 50px 0;
      display: flex;
 }
 
@@ -133,6 +133,7 @@ body {
 .main__info-counter_group-btn {
      background-color: #fff;
      border: none;
+     margin-left: 10px;
 }
 
 .main_info-counter_group-btn--down {
@@ -161,9 +162,206 @@ body {
 }
 
 
+/* modal */
+
+
+.modal {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-grow: 1;
+     transform: scale(0);
+     /* скрываем модальное окно; */
+     opacity: 0;
+     /* модальное окно прозрачным */
+     transition: opacity .3s;
+     /* плавно появляется */
+}
+
+.is-open {
+     opacity: 1;
+     transform: scale(1);
+}
+
+.modal-dialog {
+     position: relative;
+     min-width: 1000px;
+     min-height: 565px;
+     background-color: #fff;
+     display: flex;
+     opacity: 0;
+     transform: translateY(-10%);
+     transition: transform .2s;
+     transition-delay: .2s;
+}
+
+.is-open>.modal-dialog {
+     opacity: 1;
+     transform: translateY(0);
+}
+
+.modal-image {
+     background-color: #EBEBEB;
+     width: 60%;
+     text-align: center;
+     padding: 50px;
+}
+
+.flats path {
+     opacity: 0;
+     cursor: pointer;
+}
+
+.flats path:hover {
+     opacity: 1;
+}
+
+.modal-title {
+     font-family: bebas regular, sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 24px;
+     line-height: 29px;
+     margin-top: 0;
+     margin-bottom: 25px;
+}
+
+.modal-info {
+     padding: 50px 46px;
+     width: 40%;
+}
+
+.flat-list {
+     padding: 0;
+     list-style-type: none;
+     margin-top: 55px;
+}
+
+.flat-item {
+     margin-bottom: 10px;
+}
+
+.flat-link {
+     font-size: 16px;
+     line-height: 19px;
+     text-decoration: none;
+     color: #635854;
+}
+
+.flat-link:hover {
+     color: #3596F5;
+     text-decoration: underline;
+}
+
+.modal-alert {
+     font-style: italic;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     color: #635854;
+     margin-top: 75px;
+}
+
+.modal-close-button {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     cursor: pointer;
+     border: none;
+     background-color: #fff;
+
+}
+
+
+/* footer */
+
+.footer {
+     max-width: 100%;
+     margin: 0 auto;
+     background-color: #D7D7D7;
+     border-top: 5px solid #3596F5;
+     padding: 40px 0;
+}
+
+.footer__wrap {
+     max-width: 1280px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.footer__left {
+     display: flex;
+     align-items: center;
+}
+
+.foooter__left-contact {
+     margin-left: 37px;
+}
+
+.footer__left-phone-text {
+     display: block;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 16px;
+     color: #635854;
+     margin-bottom: 5px;
+}
+
+.footer__left-phone {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 17px;
+     line-height: 20px;
+     color: #635854;
+     text-decoration: none;
+}
+
+.footer__left-phone:hover {
+     color: #3596F5;
+}
+
+.footer__social-links {
+     margin-left: 15px;
+}
+
+.footer__social-links:nth-child(1) {
+     margin: 0;
+}
+
+.footer__right-links {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     color: #635854;
+     text-decoration-line: underline;
+     margin-left: 20px;
+}
+
+.footer__right-links:hover {
+     color: #3596F5;
+}
+
+.footer__right-links:nth-child(1) {
+     margin: 0;
+}
+
+
+
+
 /* ! js */
 
 
-path.current-floors {
+path.current-floor {
      opacity: 1;
 }
