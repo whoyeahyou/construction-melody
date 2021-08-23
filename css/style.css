@@ -31,50 +31,69 @@ body {
      align-items: center;
 }
 
-.navbar a:hover {
-     color: #3596F5;
+.navbar__logo-link {
+     display: block;
+     padding-top: 4px;
 }
 
-.logo {
-     padding-top: 8px;
-}
-
-.navbar__nav-menu {
-     display: flex;
+.navbar__list {
      list-style-type: none;
-     text-align: center;
+     display: flex;
      margin: 0;
      padding: 0;
 }
 
-.navbar__nav-menu--item {
-     margin: 0 40px;
+.navbar__list-item {
+     margin-left: 80px;
+     text-align: center;
 }
 
-.navbar__nav-menu--link {
+.navbar__list-item:nth-child(1) {
+     margin: 0;
+}
+
+.navbar__links {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 19px;
+     text-align: center;
+     color: #fff;
      text-decoration: none;
-     color: #fff;
 }
 
-.navbar__nav-contacts {
-     text-align: right;
+.navbar__links:hover {
+     color: #3596F5;
 }
 
-.navbar__nav-contacts--text {
-     display: block;
-     color: #fff;
-     margin-bottom: 4px;
+.navbar__contact-call {
+     font-style: normal;
+     font-weight: normal;
      font-size: 14px;
      line-height: 16px;
+     text-align: center;
+     color: #fff;
 }
 
-.navbar__nav-contacts--phone {
-     text-decoration: none;
-     color: #fff;
-     font-weight: 700;
+.navbar__contact-phone {
+     font-style: normal;
+     font-weight: bold;
      font-size: 17px;
      line-height: 20px;
+     color: #fff;
+     text-decoration: none;
 }
+
+.navbar__contact-phone:hover {
+     color: #3596F5;
+}
+
+
+.navbar__contact-call {
+     display: block;
+     margin-bottom: 5px;
+}
+
 
 
 /* ! main */
