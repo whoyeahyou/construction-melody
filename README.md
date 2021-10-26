@@ -5,4 +5,4 @@
 
 - html
 - css
-- js
+- jquerry
